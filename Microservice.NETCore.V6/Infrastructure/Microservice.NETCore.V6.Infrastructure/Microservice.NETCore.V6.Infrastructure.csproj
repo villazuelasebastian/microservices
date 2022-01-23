@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+	<Using Include="AutoMapper" />
+	<Using Include="Microservice.NETCore.V6.Application.Common.Events" />
+	<Using Include="Microservice.NETCore.V6.Application.Common.Options" />
+	<Using Include="Microservice.NETCore.V6.Application.Features.Dispatches.Queries" />
+	<Using Include="Microservice.NETCore.V6.Application.Interfaces.Repositories" />
+	<Using Include="Microservice.NETCore.V6.Domain.Entities" />
+	<Using Include="Microservice.NETCore.V6.Infrastructure.Dispatches.DTO" />
+	<Using Include="Microsoft.Extensions.Logging" />
+	<Using Include="Microsoft.Extensions.Options" />
+	<Using Include="Microsoft.Extensions.DependencyInjection" />
+	<Using Include="Microservice.NETCore.V6.Domain.Exceptions" />
+	<Using Include="Newtonsoft.Json" />
+	<Using Include="Microsoft.Extensions.Configuration" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="11.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Http" Version="6.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Core\Microservice.NETCore.V6.Application\Microservice.NETCore.V6.Application.csproj" />
+  </ItemGroup>
+
+</Project>
